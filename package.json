@@ -33,9 +33,6 @@
     "eslint-plugin-promise": "^4.2.1",
     "eslint-plugin-you-dont-need-lodash-underscore": "^6.10.0"
   },
-  "peerDependencies": {
-    "ep_etherpad-lite": ">=1.8.6"
-  },
   "eslintConfig": {
     "root": true,
     "extends": "etherpad/plugin"
