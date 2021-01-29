@@ -9,7 +9,7 @@ const request = require('request');
 const PadMessageHandler = require('../../src/node/handler/PadMessageHandler');
 const EPsessions = PadMessageHandler.sessioninfos;
 
-const OAuth2 = require('../node_modules/oauth/lib/oauth2').OAuth2;
+const OAuth2 = require('../../node_modules/oauth/lib/oauth2').OAuth2;
 
 // Setup the oauth2 connector -- Doesn't establish any connections etc.
 const oauth2 = new OAuth2(settings.ep_oauth.clientID,
