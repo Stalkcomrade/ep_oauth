@@ -39,7 +39,7 @@ exports.expressConfigure = function (hook_name, args, cb) {
             } else if (results.error) {
               // Error in Results
               console.error('error in results', results);
-              // res.end(JSON.stringify(results));
+              res.end(JSON.stringify(results));
             } else {
               // Everything is all good, we have an access token for this user
               console.debug('Obtained access_token: ', access_token);
@@ -91,6 +91,7 @@ exports.expressConfigure = function (hook_name, args, cb) {
       res.redirect(url || '/');
     });
   });
+  return []
 };
 
 // FIRST STEP
